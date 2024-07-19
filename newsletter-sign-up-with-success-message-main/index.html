@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <script defer src="./index.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,6 +23,7 @@
   </style>
 </head>
 <body>
+  <div class="center">
   <div class="card">
 
   <!-- Sign-up form start -->
@@ -53,14 +56,19 @@
   </ul>
 
 <div class="email">
-  <h6>Email address</h6>
+  
 
-  <form>
+  <form id="form" novalidate>
+    <div class="msg">
+    <h6>Email address</h6>
+    <label id="errmsg" class="none">Valid email required</label>
+    </div>
     <input class="text-box" type="email" placeholder="email@company.com" required>
   </form>
   
 <button type="submit" class="btn"> Subscribe to monthly newsletter</button>
  </div>
+</div>
 </div>
 </div>
   <!-- Sign-up form end -->
