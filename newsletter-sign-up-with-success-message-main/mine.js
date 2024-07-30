@@ -9,6 +9,12 @@ const email = document.getElementsByClassName(".text-box");
 function switchSections(){
     error_msg.classList.remove("none");
     error_msg.classList.add("error-msg");
+
+}
+function switchBlock(){
+      success_card.classList.toggle("none");
+    card.classList.toggle("card");
+      
 }
 
 form.addEventListener("submit", (e) =>{
@@ -18,23 +24,26 @@ form.addEventListener("submit", (e) =>{
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailPattern.test(emailValue)) {
-        switchSections();
+     
+        switchBlock();
+      
       } else {
        error_msg.classList.add("error-msg");
        error_msg.classList.remove("none");
+
       }
 
-      button.addEventListener('click', function(){
-        success_card.classList.remove("none");
-        success_card.classList.add("alert");
-    card.classList.remove("card");
-      card.classList.add("none");
-     });
+      //button.addEventListener('click', function(){
+      // success_card.classList.remove("none");
+      //  success_card.classList.add("alert");
+   // card.classList.remove("card");
+    // card.classList.add("none");
+    // });
     });
     
     
     button_success.addEventListener('click', function(){
-        success_card.classList.add("none");
+       success_card.classList.add("none");
         success_card.classList.remove("alert");
        card.classList.remove("none");
        card.classList.add("card");
