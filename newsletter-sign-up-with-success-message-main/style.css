@@ -9,6 +9,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    margin:200px;
 }
 .card{
     width:400px;
@@ -16,6 +17,7 @@ body{
     padding:10px;
     margin:30px;
     border-radius:10px;
+    margin:10px;
    
 
 }
@@ -31,8 +33,9 @@ body{
     background-color: white;
     margin:10px;
     border-radius:10px;
-    
+ 
 }
+
 
 .updated{
     font-weight:700;
@@ -126,9 +129,11 @@ h6{
 .none{
     display:none;
 }
+
 .error-msg{
     font-size: 12px;
     color:rgb(247, 13, 13);
+    font-weight:400;
     
 }
 .msg{
