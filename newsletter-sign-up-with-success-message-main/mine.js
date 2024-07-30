@@ -33,12 +33,12 @@ form.addEventListener("submit", (e) =>{
 
       }
 
-      //button.addEventListener('click', function(){
-      // success_card.classList.remove("none");
-      //  success_card.classList.add("alert");
-   // card.classList.remove("card");
-    // card.classList.add("none");
-    // });
+      button.addEventListener('click', function(){
+      success_card.classList.remove("none");
+        success_card.classList.add("alert");
+    card.classList.remove("card");
+     card.classList.add("none");
+ });
     });
     
     
